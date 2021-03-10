@@ -103,11 +103,8 @@ public class Main {
         System.out.println(welcomeFood);
 
         System.out.println("\nChoose your food[1-3]: ");
-//        try {
-//        String strMenuOption = scanner.nextLine();
-//        int menuOption = Integer.parseInt(strMenuOption);
+
         int menuOption = scanner.nextInt();
-        scanner.nextLine();
         setMyFood(menuOption);
         menuOption = getMyFood();
 
@@ -128,28 +125,7 @@ public class Main {
         } else {
             System.out.println("\n>>Please choose from 1 to 3.");
             displayFood();
-        }
-//            switch(getMyFood()) {
-//                case 1:
-//                    orderSelected = food[0];
-//                    setOrderSelected(orderSelected);
-//                    processOrder1(getOrderSelected());
-//                case 2:
-//                    orderSelected = food[1];
-//                    setOrderSelected(orderSelected);
-//                    processOrder1(getOrderSelected());
-//                case 3:
-//                    orderSelected = food[2];
-//                    setOrderSelected(orderSelected);
-//                    processOrder1(getOrderSelected());
-//                case 4: displayFood();
-//                default:
-//                    System.out.println("\n>>Please choose from 1 to 3.");
-//                    displayFood();
-//            }
-//        } catch (Exception e) {
-//
-//        }
+        }           
 
 
     }
@@ -597,8 +573,7 @@ public class Main {
     }
 
     public void clearScreen() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+         //Insert command for clearing console screen
     }
 
     public void goodbye() {
